@@ -1,0 +1,48 @@
+@import "../../_colors.scss";
+
+a {
+    width: 198px;
+    height: 53.8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    cursor: pointer;
+}
+a.main {
+    background: $main-color;
+    color: $light-color;
+    font-weight: 500;
+}
+a.main:hover {
+    background-color: $light-color;
+    color: $main-color;
+    transition: 0.8s all;
+    border: $main-color solid 3px;
+}
+
+a.dark {
+    background-color: none;
+    color: $dark-color;
+    border: $dark-color solid 3px;
+}
+a.dark:hover {
+    background-color: $dark-color;
+    color: $light-color;
+    transition: 0.8s all;
+    border: none;
+}
+
+a.light {
+    background-color: none;
+    color: $light-color;
+    font-weight: 500;
+    border: $light-color solid 3px;
+}
+
+a.light:hover {
+    background-color: $light-color;
+    color: $main-color;
+    transition: 0.8s all;
+    border: none;
+}

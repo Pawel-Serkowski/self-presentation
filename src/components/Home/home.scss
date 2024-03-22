@@ -1,0 +1,53 @@
+@import "../../_colors.scss";
+
+.home {
+    height: calc(100vh - 90px);
+    max-width: 1120px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+
+    .wrapper {
+        position: absolute;
+        bottom: -10px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .textContainer {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+
+            h1 {
+                font-size: 72px;
+                color: $main-color;
+            }
+
+            p {
+                font-size: 22px;
+                color: $dark-color;
+
+                span {
+                    color: $main-color;
+                    font-weight: 600;
+                }
+            }
+
+            .buttonContainer {
+                display: flex;
+                gap: 20px;
+                margin-top: 27px;
+            }
+        }
+
+        .svgContainer {
+            display: flex;
+            justify-content: flex-end;
+            svg {
+                width: 90%;
+                height: auto;
+                stroke: $main-color;
+            }
+        }
+    }
+}
