@@ -6,14 +6,14 @@ import "./home.scss";
 
 const variants = {
     initial: {
-        x: -300,
+        x: -600,
         opacity: 0.6,
     },
     animate: {
         x: 0,
         opacity: 1,
         transition: {
-            duration: 2,
+            duration: 1.3,
             staggerChildren: 0.4,
         },
     },
@@ -51,6 +51,12 @@ const Home = () => {
                         />
                     </svg>
                 </motion.div>
+                <div className="background-circles">
+                    <div className="circle1 circle"/>
+                    <div className="circle2 circle"/>
+                    <div className="circle3 circle"/>
+                    <div className="circle4 circle"/>
+                </div>
             </div>
         </motion.div>
     );
