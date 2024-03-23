@@ -7,7 +7,7 @@ import "./home.scss";
 const variants = {
     initial: {
         x: -600,
-        opacity: 0.6,
+        opacity: 0,
     },
     animate: {
         x: 0,
@@ -29,8 +29,8 @@ const Home = () => {
                 <motion.div className="textContainer" variants={variants} animate="animate" initial="initial">
                     <motion.h1 variants={variants}>Hi, I’m Paweł</motion.h1>
                     <motion.p variants={variants}>
-                        I am an 18-year-old and I dream of becoming <br />a <span>full-stack</span> developer. To make it come true, <br />{" "}
-                        I invite you into my
+                        I am an 18-year-old and I dream of becoming a <span>full-stack</span> developer. To make it come true, I invite you
+                        into my
                         <span> world.</span>
                     </motion.p>
                     <motion.div className="buttonContainer" variants={variants}>
@@ -51,12 +51,6 @@ const Home = () => {
                         />
                     </svg>
                 </motion.div>
-                <div className="background-circles">
-                    <div className="circle1 circle"/>
-                    <div className="circle2 circle"/>
-                    <div className="circle3 circle"/>
-                    <div className="circle4 circle"/>
-                </div>
             </div>
         </motion.div>
     );

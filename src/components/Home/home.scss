@@ -1,23 +1,25 @@
 @import "../../_colors.scss";
 
 .home {
-    height: 100%;
-    max-width: 1120px;
-    margin: auto;
-    position: relative;
+    height: calc(100% - 90px);
     overflow: hidden;
+    // display: flex;
+    // align-items: flex-end;
+    // justify-content: center;
+    position: relative;
 
     .wrapper {
-        height:90%;
-        position: absolute;
-        bottom:0;
+        height: 90%;
+        margin: 0 auto;
+        margin-top: 135px;
+        max-width: 1120px;
+
         display: flex;
         justify-content: space-between;
-        width: 100%;
+
         .textContainer {
             display: flex;
             flex-direction: column;
-            width: auto;
 
             h1 {
                 font-size: 72px;
@@ -42,33 +44,14 @@
         }
 
         .svgContainer {
+            height: 100%;
             display: flex;
             justify-content: flex-end;
             svg {
-                width: 90%;
-                height: auto;
                 stroke: $main-color;
                 display: block;
-            }
-        }
-    }
-    .background-circles{
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-
-        .circle{
-            background-color: $main-color;
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            position:absolute;
-
-            .circle1{
-                top:0;
-                right:69,9;
+                width: auto;
+                height: 100%;
             }
         }
     }
