@@ -1,0 +1,88 @@
+@import "../../_style-settings.scss";
+
+.about {
+    background-color: $dark_color;
+    width: 100%;
+    height: 100%;
+    color: $light-color;
+    position: relative;
+    overflow: hidden;
+
+    .wrapper {
+        max-width: 1120px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 200px;
+
+        .videoContainer {
+            z-index: 2;
+
+            background-color: $light-color;
+            overflow: hidden;
+            flex: 1;
+        }
+        .textContainer {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .title {
+                margin-bottom: 20px;
+                width: 100%;
+                h1 {
+                    font-size: $h1-size;
+                    padding: 0;
+                    margin-bottom: -10px;
+                }
+                hr {
+                    height: 4px;
+                    background-color: $light-color;
+                }
+            }
+
+            .aboutText {
+                h2 {
+                    font-size: $h2-size;
+                    font-weight: 500;
+                    color: $main-color;
+                }
+                p {
+                    font-size: $body-text;
+                    margin-bottom: 10px;
+
+                    span {
+                        color: $main-color;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .catContainer {
+                width: 186px;
+                height: 186px;
+                border-radius: 50%;
+                background-color: $main-color;
+                margin-top: 10px;
+                position: relative;
+                img {
+                    display: block;
+                    position: absolute;
+                    top: 45%;
+                    left: 57%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+    .circle-big {
+        height: 100vw;
+        width: 100vw;
+
+        top: 50%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+    }
+}

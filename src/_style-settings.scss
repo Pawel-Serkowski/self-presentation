@@ -1,0 +1,15 @@
+$light-color: #f4efef;
+$dark-color: #0b1424;
+$main-color: #f08314;
+
+$h1-size: 62px;
+$h2-size: 39px;
+$body-text: 20px;
+$input-text: 20px;
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: $main-color;
+    z-index: 0;
+}

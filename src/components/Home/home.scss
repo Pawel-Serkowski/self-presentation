@@ -1,11 +1,8 @@
-@import "../../_colors.scss";
+@import "../../_style-settings.scss";
 
 .home {
     height: calc(100% - 90px);
     overflow: hidden;
-    // display: flex;
-    // align-items: flex-end;
-    // justify-content: center;
     position: relative;
 
     .wrapper {
@@ -22,7 +19,7 @@
             flex-direction: column;
 
             h1 {
-                font-size: 72px;
+                font-size: $h1-size;
                 color: $main-color;
             }
 
