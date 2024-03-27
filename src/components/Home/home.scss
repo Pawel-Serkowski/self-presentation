@@ -1,55 +1,58 @@
 @import "../../_style-settings.scss";
 
 .home {
-    height: calc(100% - 90px);
-    overflow: hidden;
-    position: relative;
+  height: calc(100% - 90px);
+  overflow: hidden;
+  position: relative;
 
-    .wrapper {
-        height: 90%;
-        margin: 0 auto;
-        margin-top: 135px;
-        max-width: 1120px;
+  .wrapper {
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 135px;
+    max-width: 1120px;
 
+    display: flex;
+    justify-content: space-between;
+
+    .textContainer {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: flex-start;
+
+      h1 {
+        font-size: $h1-size;
+        color: $main-color;
+      }
+
+      p {
+        font-size: 22px;
+        color: $dark-color;
+
+        span {
+          color: $main-color;
+          font-weight: 600;
+        }
+      }
+
+      .buttonContainer {
         display: flex;
-        justify-content: space-between;
-
-        .textContainer {
-            display: flex;
-            flex-direction: column;
-
-            h1 {
-                font-size: $h1-size;
-                color: $main-color;
-            }
-
-            p {
-                font-size: 22px;
-                color: $dark-color;
-
-                span {
-                    color: $main-color;
-                    font-weight: 600;
-                }
-            }
-
-            .buttonContainer {
-                display: flex;
-                gap: 20px;
-                margin-top: 27px;
-            }
-        }
-
-        .svgContainer {
-            height: 100%;
-            display: flex;
-            justify-content: flex-end;
-            svg {
-                stroke: $main-color;
-                display: block;
-                width: auto;
-                height: 100%;
-            }
-        }
+        gap: 20px;
+        margin-top: 27px;
+      }
     }
+
+    .svgContainer {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      svg {
+        stroke: $main-color;
+        display: block;
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
 }

@@ -1,42 +1,56 @@
+import { motion, useInView } from "framer-motion";
+
+import AboutText from "./AboutText/AboutText";
+import Video from "./Video/Video";
 import "./about.scss";
 
 import CatImg from "/img/Cat.png";
 import mp4File from "/video/Demo.mp4";
+import { useRef } from "react";
+
+const variantsRight = {
+  initial: {
+    x: 500,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.4,
+    },
+  },
+};
+const variatnsLeft = {
+  initial: {
+    x: -200,
+    opacity: 0,
+  },
+
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.4,
+    },
+  },
+};
 
 const About = () => {
-    return (
-        <div className="about">
-            <div className="circle circle-big"></div>
-            <div className="wrapper">
-                <div className="videoContainer"></div>
-                <div className="textContainer">
-                    <div className="title">
-                        <h1>About me</h1>
-                        <hr />
-                    </div>
-                    <div className="aboutText">
-                        <h2>But who I am?</h2>
-                        <p>
-                            In general, I’m a student, cab-scout troop leader, <span>programmer</span> and guitarist. Every day, I try to
-                            learn something new. May be it’s a new React feature or may be the Rubik’s cube algorithm. I invite you to see
-                            my <span>work.</span>
-                        </p>
-                        <p>
-                            I <span>dream</span> about becoming a full-stack developer, who can make an application from scratch through
-                            sketching project to developing process. I’d love to gain any experience I can and turn it into something
-                            beautiful.
-                        </p>
-                        <p>
-                            Now please play the video and hear something more <span>about me.</span>
-                        </p>
-                    </div>
-                    <div className="catContainer">
-                        <img src={CatImg} alt="" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
+  const ref = useRef(null);
+  const inView = useInView(ref, { margin: "-100px" });
+
+  return (
+    <motion.div className="about" ref={ref}>
+      <div className="circle circle-big" />
+      <div className="wrapper">
+        <Video file={mp4File} variants={variatnsLeft} inView={inView} />
+        <AboutText file={CatImg} variants={variantsRight} inView={inView} />
+      </div>
+    </motion.div>
+  );
 };
 
 export default About;

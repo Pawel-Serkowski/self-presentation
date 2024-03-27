@@ -1,0 +1,45 @@
+@import "../../_style-settings.scss";
+
+.techstack {
+  max-width: 1120px;
+  margin: 0 auto;
+  height: 100%;
+
+  .wrapper {
+    height: 100%;
+    gap: 115px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: relative;
+
+    .title {
+      top: 10px;
+      left: 0;
+      position: absolute;
+      color: $light-color;
+      width: 500px;
+    }
+
+    .left-side {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      // align-items: flex-start;
+      flex-direction: column;
+
+      h2 {
+        color: $light-color;
+        margin-bottom: 10px;
+      }
+
+      .footer {
+        margin-top: 20px;
+        h2 {
+          font-weight: 600;
+          font-size: 4vmin;
+        }
+      }
+    }
+  }
+}
