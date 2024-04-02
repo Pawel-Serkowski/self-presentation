@@ -1,0 +1,26 @@
+@import "../../style-settings";
+.projects {
+    background-color: $dark-color;
+    position: relative;
+
+    .statusBar {
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding-top: 20px;
+        text-align: center;
+        z-index: 1;
+
+        h4 {
+            color: $light-color;
+            letter-spacing: 2px;
+            font-weight: 600;
+            font-size: $h2-size;
+        }
+
+        .progress {
+            height: 10px;
+            background-color: $main-color;
+        }
+    }
+}

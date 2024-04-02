@@ -35,7 +35,7 @@ const Home = () => {
                     </motion.p>
                     <motion.div className="buttonContainer" variants={variants}>
                         <Button style={"main"} text={"Read about me"} id="about" />
-                        <Button style={"dark"} text={"See my projects"} id="projects" />
+                        <Button style={"dark"} text={"See my projects"} id="parallax" />
                     </motion.div>
                 </motion.div>
                 <motion.div className="svgContainer">

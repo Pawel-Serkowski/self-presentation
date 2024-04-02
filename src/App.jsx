@@ -5,6 +5,8 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import TechStack from "./components/TechStack/TechStack";
 import Parallax from "./components/Parallax/Parallax";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Contact from "./components/Contact/Contact";
 
 function App() {
     return (
@@ -19,11 +21,13 @@ function App() {
             <section id="techstack">
                 <TechStack />
             </section>
-            <section id="projects">
+            <section id="parallax">
                 <Parallax />
             </section>
-            <section>Portfolio</section>
-            <section id="contact">Contact</section>
+            <Portfolio />
+            <section id="contact">
+                <Contact />
+            </section>
         </div>
     );
 }

@@ -1,0 +1,36 @@
+@import "../../../_style-settings.scss";
+.project-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: inherit;
+    background-color: $dark-color;
+    overflow: hidden;
+
+    .wrapper {
+        max-width: 1120px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 45px;
+
+        img {
+            display: block;
+            display: 1;
+        }
+
+        .textContainer {
+            flex: 1;
+
+            color: $light-color;
+            h1 {
+                color: $main-color;
+            }
+
+            p {
+                margin-bottom: 22px;
+            }
+        }
+    }
+}

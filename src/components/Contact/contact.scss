@@ -1,0 +1,56 @@
+@import "../../style-settings";
+
+.contact {
+    background-color: $light-color;
+    height: 100%;
+
+    .wrapper {
+        max-width: 1120px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            color: $main-color;
+            margin-bottom: 26px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 115px;
+
+            .textContainer {
+                flex: 1;
+                font-size: $body-text;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+
+                span {
+                    color: $main-color;
+                    font-weight: 600;
+                }
+
+                .imgContainer {
+                    width: 186px;
+                    height: 186px;
+                    border-radius: 50%;
+                    background-color: $main-color;
+                    margin-bottom: 100px;
+                    position: relative;
+                    img {
+                        display: block;
+                        position: absolute;
+                        top: 45%;
+                        left: 57%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+    }
+}
