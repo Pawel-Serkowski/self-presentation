@@ -2,43 +2,17 @@ $light-color: #f4efef;
 $dark-color: #0b1424;
 $main-color: #f08314;
 
-$h1-size: 7vh;
+$h1-size: 62px;
 $h2-size: 5vh;
 $h3-size: 3.4vh;
 $body-text: 20px;
-$input-text: 22px;
+$input-text: 18px;
 
-.circle {
-    position: absolute;
-    border-radius: 50%;
-    background-color: $main-color;
-    z-index: 0;
-}
-
-h1 {
-    font-size: $h1-size;
-}
-h2 {
-    font-size: $h2-size;
-    font-weight: 500;
-}
-h3 {
-    font-size: $h3-size;
-    font-weight: 500;
-}
-
-.title {
-    margin-bottom: 20px;
-    width: 100%;
-    h1 {
-        padding: 0;
-        margin-bottom: -10px;
+@mixin tablet {
+    @media (max-width: 1120px) {
+        @content;
     }
-    hr {
-        height: 4px;
-        width: 80%;
-        background-color: $light-color;
-        outline: none;
-        border: none;
-    }
+}
+@include tablet {
+    $h1-size: 50px;
 }

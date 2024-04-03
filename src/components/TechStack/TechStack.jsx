@@ -34,13 +34,13 @@ const TechStack = () => {
 
     return (
         <div className="techstack" ref={ref}>
+            <motion.div className="title" variants={variants}>
+                <h1>Tech Stack</h1>
+                <hr />
+            </motion.div>
             <motion.div className="wrapper" animate={inView && "animate"} initial="initial">
-                <motion.div className="title" variants={variants}>
-                    <h1>About me</h1>
-                    <hr />
-                </motion.div>
                 <motion.div className="left-side" variants={variants}>
-                    <motion.h2 variants={variants}>Tech Stack</motion.h2>
+                    <motion.h1 variants={variants}>Tech Stack</motion.h1>
                     <ButtonBox setSelectedId={setSelectedId} selectedId={selectedId} stackData={stackData} inView={inView} />
                     <motion.div className="footer" variants={variants}>
                         <h2>Something interested you?</h2>

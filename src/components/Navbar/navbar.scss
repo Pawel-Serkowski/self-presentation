@@ -1,37 +1,41 @@
 @import "../../_style-settings.scss";
 
 .navbar {
-  max-width: 1120px;
-  margin: auto;
-  display: flex;
-  justify-content: flex-end;
-  height: 90px;
-  align-items: flex-end;
-
-  ul {
-    list-style: none;
+    max-width: 1120px;
+    margin: auto;
     display: flex;
-    align-items: center;
-    gap: 20px;
-    color: $dark-color;
-    font-size: 20px;
-    font-weight: 500;
+    justify-content: flex-end;
+    height: 90px;
+    align-items: flex-end;
 
-    li {
-      a {
-        width: 100%;
-      }
+    @include tablet {
+        width: 90%;
     }
 
-    .btn {
-      width: 169px;
-      height: 46px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: $light-color;
-      background-color: #df661f;
-      border-radius: 13px;
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: $dark-color;
+        font-size: 20px;
+        font-weight: 500;
+
+        li {
+            a {
+                width: 100%;
+            }
+        }
+
+        .btn {
+            width: 169px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $light-color;
+            background-color: #df661f;
+            border-radius: 13px;
+        }
     }
-  }
 }

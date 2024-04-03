@@ -15,9 +15,24 @@
         justify-content: center;
         gap: 45px;
 
-        img {
-            display: block;
-            display: 1;
+        @include tablet {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 90%;
+        }
+
+        .imgContainer {
+            @include tablet {
+                transform: none !important;
+                width: 80%;
+            }
+            img {
+                display: block;
+                width: 100%;
+                display: 1;
+            }
         }
 
         .textContainer {
@@ -30,6 +45,12 @@
 
             p {
                 margin-bottom: 22px;
+            }
+
+            @include tablet {
+                flex: none;
+                margin-bottom: 30px;
+                transform: none !important;
             }
         }
     }

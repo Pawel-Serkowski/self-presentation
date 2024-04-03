@@ -12,6 +12,12 @@
     flex: 1;
     border-radius: 28px;
 
+    @include tablet {
+        flex: none;
+        max-width: 80%;
+        width: auto;
+    }
+
     video {
         height: 100%;
     }

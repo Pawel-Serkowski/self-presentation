@@ -1,6 +1,12 @@
+@import "../../../style-settings";
+
 .buttonContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 500px;
+    @include tablet {
+        grid-template-columns: 50% 50%;
+        width: 90%;
+    }
 }

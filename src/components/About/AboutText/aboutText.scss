@@ -1,39 +1,52 @@
 @import "../../../style-settings";
 .textContainer {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  .aboutText {
-    h2 {
-      font-size: $h2-size;
-      font-weight: 500;
-      color: $main-color;
+    @include tablet {
+        justify-content: flex-start;
+        flex: none;
     }
-    p {
-      font-size: $body-text;
-      margin-bottom: 10px;
 
-      span {
-        color: $main-color;
-        font-weight: 500;
-      }
+    .aboutText {
+        @include tablet {
+            width: 80%;
+            // text-align: center;
+        }
+        h2 {
+            font-size: $h2-size;
+            font-weight: 500;
+            color: $main-color;
+        }
+        p {
+            font-size: $body-text;
+            margin-bottom: 10px;
+
+            span {
+                color: $main-color;
+                font-weight: 500;
+            }
+        }
     }
-  }
-  .catContainer {
-    width: 186px;
-    height: 186px;
-    border-radius: 50%;
-    background-color: $main-color;
-    margin-top: 10px;
-    position: relative;
-    img {
-      display: block;
-      position: absolute;
-      top: 45%;
-      left: 57%;
-      transform: translate(-50%, -50%);
+    .catContainer {
+        width: 186px;
+        height: 186px;
+        border-radius: 50%;
+        background-color: $main-color;
+        margin-top: 10px;
+        position: relative;
+
+        @include tablet {
+            display: none;
+        }
+        img {
+            display: block;
+            position: absolute;
+            top: 45%;
+            left: 57%;
+            transform: translate(-50%, -50%);
+        }
     }
-  }
 }

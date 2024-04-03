@@ -5,6 +5,11 @@
     display: flex;
     flex: 1;
     flex-direction: column;
+
+    @include tablet {
+        flex: none;
+    }
+
     input,
     textarea {
         width: 100%;
@@ -15,6 +20,7 @@
         border-radius: 14px;
         margin-bottom: 18px;
         padding-left: 28px;
+        font-size: $input-text;
     }
 
     textarea {

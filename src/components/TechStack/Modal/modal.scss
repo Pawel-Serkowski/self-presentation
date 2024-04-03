@@ -2,14 +2,16 @@
 
 .modal {
     width: 450px;
-    // min-height: 400px;
     background-color: $light-color;
     border-radius: 17px;
-    // transition: 1s all;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    @include tablet {
+        width: 90%;
+        flex: 2;
+    }
 
     h3 {
         text-align: center;

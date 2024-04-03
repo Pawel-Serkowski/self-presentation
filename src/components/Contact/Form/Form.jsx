@@ -32,10 +32,16 @@ const Form = () => {
         <form onSubmit={(e) => sendEmail(e)} className="contactForm" ref={form}>
             <input type="text" name="name" placeholder="Name" ref={refName} required />
             <input type="email" name="email" placeholder="Email" ref={refEmail} required />
-            <input type="text" name="gender" placeholder="Gender" style={{ display: "none" }} ref={refValidate} required />
-            <textarea type="email" name="email_content" placeholder="email" ref={refContent} />
+            <input type="text" name="gender" placeholder="Gender" style={{ display: "none" }} ref={refValidate} />
+            <textarea type="email" name="email_content" placeholder="email" ref={refContent} required />
             <div className={`send ${send}`}>
-                {send === "true" ? <>Twoja wiadomość została wysłana</> : send === "false" ? <>Twoja wiadomość nie została wysłana</> : ""}
+                {send === "true" ? (
+                    <>Twoja wiadomość została wysłana</>
+                ) : send === "false" ? (
+                    <>Przepraszam. Twoja wiadomość nie została wysłana. Wyślij wiadomość na maila: paw.serkowski@gmail.com</>
+                ) : (
+                    ""
+                )}
             </div>
             <motion.input className="submit" type="submit" value="Send!" />
         </form>
