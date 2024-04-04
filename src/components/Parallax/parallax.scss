@@ -11,9 +11,6 @@
 
     h1 {
         color: $light-color;
-
-        @include tablet {
-        }
     }
 
     .moutains {
@@ -59,7 +56,6 @@
         z-index: 1;
         @include tablet {
             background-size: contain;
-            // background-repeat: no-repeat;
             background-position: center;
         }
     }
