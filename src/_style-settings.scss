@@ -2,17 +2,25 @@ $light-color: #f4efef;
 $dark-color: #0b1424;
 $main-color: #f08314;
 
-$h1-size: 62px;
-$h2-size: 5vh;
+$h1-size: 55px;
+$h2-size: 49px;
 $h3-size: 3.4vh;
-$body-text: 20px;
+$body-text: 21px;
 $input-text: 18px;
+
+$h1-mobile: 9vmin;
+$h2-mobile: 35px;
+$h3-size: 3.4vh;
+$body-mobile: 16px;
+$input-mobile: 15px;
 
 @mixin tablet {
     @media (max-width: 1120px) {
         @content;
     }
 }
-@include tablet {
-    $h1-size: 50px;
+@mixin mobile {
+    @media (max-width: 767px) {
+        @content;
+    }
 }

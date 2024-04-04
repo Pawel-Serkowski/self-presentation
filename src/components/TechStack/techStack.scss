@@ -33,6 +33,11 @@
             padding: 20px;
             padding-top: 0;
         }
+
+        @include mobile {
+            // flex-direction: column-reverse;
+            justify-content: space-between;
+        }
         .left-side {
             flex: 1;
             display: flex;

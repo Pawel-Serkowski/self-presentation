@@ -33,7 +33,7 @@ const Form = () => {
             <input type="text" name="name" placeholder="Name" ref={refName} required />
             <input type="email" name="email" placeholder="Email" ref={refEmail} required />
             <input type="text" name="gender" placeholder="Gender" style={{ display: "none" }} ref={refValidate} />
-            <textarea type="email" name="email_content" placeholder="email" ref={refContent} required />
+            <textarea type="email" name="email_content" placeholder="Message" ref={refContent} required />
             <div className={`send ${send}`}>
                 {send === "true" ? (
                     <>Twoja wiadomość została wysłana</>

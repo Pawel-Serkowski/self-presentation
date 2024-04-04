@@ -5,6 +5,10 @@
     overflow: hidden;
     position: relative;
 
+    // @include mobile {
+    //     height: 100%;
+    // }
+
     .wrapper {
         height: 100%;
         margin: 0 auto;
@@ -19,6 +23,10 @@
             max-height: 100%;
             justify-content: flex-end;
         }
+        @include mobile {
+            padding: 3px;
+            padding-bottom: 0;
+        }
 
         .textContainer {
             display: flex;
@@ -32,12 +40,10 @@
             }
 
             h1 {
-                font-size: $h1-size;
                 color: $main-color;
             }
 
             p {
-                font-size: 22px;
                 color: $dark-color;
 
                 span {
@@ -53,6 +59,9 @@
                 width: auto;
                 @include tablet {
                     margin-top: 20px;
+                }
+                @include mobile {
+                    width: 90%;
                 }
             }
         }

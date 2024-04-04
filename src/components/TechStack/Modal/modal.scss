@@ -12,6 +12,12 @@
         width: 90%;
         flex: 2;
     }
+    @include mobile {
+        width: 70%;
+        flex: none;
+        padding: 4px;
+        padding-left: 5px;
+    }
 
     h3 {
         text-align: center;
@@ -33,6 +39,11 @@
         li {
             margin: 10px 0;
             font-size: $body-text;
+
+            @include mobile {
+                font-size: $body-mobile;
+                margin: 3px 0;
+            }
         }
     }
 }

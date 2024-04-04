@@ -11,11 +11,20 @@
         text-align: center;
         z-index: 1;
 
+        @include mobile {
+            // padding-top: calc(100vh - 40px);
+        }
+
         h4 {
             color: $light-color;
             letter-spacing: 2px;
             font-weight: 600;
             font-size: $h2-size;
+
+            @include mobile {
+                font-size: $body-text;
+                display: none;
+            }
         }
 
         .progress {

@@ -9,4 +9,9 @@
         grid-template-columns: 50% 50%;
         width: 90%;
     }
+    @include mobile {
+        align-self: center;
+        grid-template-columns: 70px;
+        gap: 10px;
+    }
 }

@@ -17,6 +17,11 @@ section {
     scroll-snap-align: center;
     color: $dark-color;
     background-color: $light-color;
+
+    @include mobile {
+        max-height: 100vh;
+        scroll-snap-align: start;
+    }
 }
 
 #techstack {
@@ -31,14 +36,26 @@ a {
 
 h1 {
     font-size: $h1-size;
+    @include mobile {
+        font-size: $h1-mobile;
+    }
 }
 h2 {
     font-size: $h2-size;
     font-weight: 500;
+    @include mobile {
+        font-size: $h2-mobile;
+    }
 }
 h3 {
     font-size: $h3-size;
     font-weight: 500;
+}
+p {
+    font-size: $body-text;
+    @include mobile {
+        font-size: $body-mobile;
+    }
 }
 
 .title {

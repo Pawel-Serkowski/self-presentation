@@ -23,10 +23,17 @@
             width: 90%;
         }
 
+        @include mobile {
+            gap: 0px;
+        }
+
         .imgContainer {
+            width: 100%;
+            flex: 1;
             @include tablet {
                 transform: none !important;
                 width: 80%;
+                flex: none;
             }
             img {
                 display: block;

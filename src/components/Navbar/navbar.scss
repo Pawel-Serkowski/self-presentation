@@ -12,6 +12,12 @@
         width: 90%;
     }
 
+    @include mobile {
+        font-size: $body-mobile;
+        justify-content: center;
+        width: 96%;
+    }
+
     ul {
         list-style: none;
         display: flex;
@@ -21,21 +27,28 @@
         font-size: 20px;
         font-weight: 500;
 
+        @include mobile {
+            gap: 0px;
+        }
         li {
             a {
                 width: 100%;
             }
-        }
 
-        .btn {
-            width: 169px;
-            height: 46px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: $light-color;
-            background-color: #df661f;
-            border-radius: 13px;
+            .btn {
+                width: 169px;
+                height: 46px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $light-color;
+                background-color: #df661f;
+                border-radius: 13px;
+
+                @include mobile {
+                    width: 120px;
+                }
+            }
         }
     }
 }

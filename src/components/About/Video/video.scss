@@ -18,8 +18,19 @@
         width: auto;
     }
 
+    @include mobile {
+        width: 100%;
+        height: fit-content;
+        border-radius: 2px;
+    }
+
     video {
         height: 100%;
+
+        @include mobile {
+            width: 100%;
+            // height: auto;
+        }
     }
 
     button {

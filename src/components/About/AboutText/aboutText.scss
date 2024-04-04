@@ -13,15 +13,18 @@
     .aboutText {
         @include tablet {
             width: 80%;
-            // text-align: center;
+        }
+        @include mobile {
+            width: 95%;
         }
         h2 {
-            font-size: $h2-size;
-            font-weight: 500;
             color: $main-color;
+            @include mobile {
+                text-align: center;
+                margin-bottom: 10px;
+            }
         }
         p {
-            font-size: $body-text;
             margin-bottom: 10px;
 
             span {
@@ -31,8 +34,8 @@
         }
     }
     .catContainer {
-        width: 186px;
-        height: 186px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         background-color: $main-color;
         margin-top: 10px;
@@ -46,6 +49,7 @@
             position: absolute;
             top: 45%;
             left: 57%;
+            width: 80%;
             transform: translate(-50%, -50%);
         }
     }
