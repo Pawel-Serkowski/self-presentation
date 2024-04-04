@@ -19,6 +19,6 @@ export const projectData = [
         ],
         img: selfPresentation,
         buttonText: "Back to homepage",
-        link: "#home",
+        link: "/",
     },
 ];

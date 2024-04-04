@@ -23,13 +23,13 @@ const Navbar = () => {
         <nav className="navbar">
             <motion.ul variants={variants} initial="initial" animate="animate">
                 <motion.li variants={variants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
-                    <a href="#about">About me</a>
+                    <a href="/#about">About me</a>
                 </motion.li>
                 <motion.li variants={variants} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
-                    <a href="#parallax">My projects</a>
+                    <a href="/#parallax">My projects</a>
                 </motion.li>
                 <motion.li variants={variants}>
-                    <motion.a href="#contact" className="btn" whileHover={{ backgroundColor: "#ce550e" }}>
+                    <motion.a href="/#contact" className="btn" whileHover={{ backgroundColor: "#ce550e" }}>
                         Contact me
                     </motion.a>
                 </motion.li>
