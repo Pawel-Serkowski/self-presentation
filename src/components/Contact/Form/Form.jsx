@@ -36,9 +36,9 @@ const Form = () => {
             <textarea type="email" name="email_content" placeholder="Message" ref={refContent} required />
             <div className={`send ${send}`}>
                 {send === "true" ? (
-                    <>Twoja wiadomość została wysłana</>
+                    <>Your message has been sent </>
                 ) : send === "false" ? (
-                    <>Przepraszam. Twoja wiadomość nie została wysłana. Wyślij wiadomość na maila: paw.serkowski@gmail.com</>
+                    <>Sorry, Your message can not be send right now. Please write to me: paw.serkowski@gmail.com</>
                 ) : (
                     ""
                 )}
