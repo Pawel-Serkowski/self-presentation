@@ -5,7 +5,7 @@ import Video from "./Video/Video";
 import "./about.scss";
 
 import CatImg from "/img/Cat.png";
-import mp4File from "/video/Demo.mp4";
+import mp4File from "/video/autoprezentacja.mp4";
 import { useRef } from "react";
 
 const variantsRight = {

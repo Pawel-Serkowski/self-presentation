@@ -29,7 +29,7 @@ const Home = () => {
                 <motion.div className="textContainer" variants={variants} animate="animate" initial="initial">
                     <motion.h1 variants={variants}>Hi, I’m Paweł</motion.h1>
                     <motion.p variants={variants}>
-                        I am an 18-year-old and I dream of becoming a <span>full-stack</span> developer. To make it come true, I invite you
+                        I am 18 year old and I dream of becoming a <span>full-stack</span> developer. To make it come true, I invite you
                         into my
                         <span> world.</span>
                     </motion.p>

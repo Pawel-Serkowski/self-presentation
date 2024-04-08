@@ -8,7 +8,7 @@ import cssLogo from "/img/css.png";
 export const data = [
     {
         id: 0,
-        text: "General",
+        text: "Skills",
         logo: otherLogo,
         content: [
             "Basic C++, object and classes are also included",

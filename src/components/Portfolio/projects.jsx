@@ -5,7 +5,7 @@ export const projectData = [
     {
         title: "Scouts skills",
         desc: [
-            "This app is currently working for scouts and their parents to pick challenges to advance themselves.I created this app in 2022 for myself and other scouts but but the development of it had to come to an end in January 2024 since the official ZHP team made their own version of it.",
+            "This app is currently working for scouts and their parents to pick challenges to advance themselves. I created this app in 2022 for myself and other scouts but but the development of it had to come to an end in January 2024 since the official ZHP team made their own version of it.",
             "From this project, I learned about developing, hosting, making pdfs, domains, DNS and how GitHub works.",
         ],
         img: scoutSkills,

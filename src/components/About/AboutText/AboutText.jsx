@@ -7,8 +7,8 @@ const AboutText = ({ file, variants, inView }) => {
             <motion.div className="aboutText" variants={variants}>
                 <h2>But who am I?</h2>
                 <p>
-                    In general, I’m a student, cab-scout troop leader, <span>programmer</span> and guitarist. Every day, I try to learn
-                    something new. May be it’s a new React feature or may be the Rubik’s cube algorithm. I invite you to see my{" "}
+                    In general, I’m a secondary school student, cab-scout troop leader, <span>programmer</span> and guitarist. Every day, I
+                    try to learn something new. May be it’s a new React feature or may be the Rubik’s cube algorithm. I invite you to see my{" "}
                     <span>work.</span>
                 </p>
                 <p>

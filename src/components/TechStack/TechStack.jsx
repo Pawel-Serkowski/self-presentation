@@ -43,7 +43,7 @@ const TechStack = () => {
                     <motion.h1 variants={variants}>Tech Stack</motion.h1>
                     <ButtonBox setSelectedId={setSelectedId} selectedId={selectedId} stackData={stackData} inView={inView} />
                     <motion.div className="footer" variants={variants}>
-                        <h2>Something interested you?</h2>
+                        <h2>Something of interest you?</h2>
                         <Button style="light" text="Contact me" id="contact" />
                     </motion.div>
                 </motion.div>

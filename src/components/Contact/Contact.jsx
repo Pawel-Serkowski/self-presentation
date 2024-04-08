@@ -12,7 +12,7 @@ function Contact() {
                     <div className="textContainer">
                         <p>
                             I hope you’ve enjoyed my self-presentation and gained some perspective on me. If you have any more questions
-                            about my projects or if you’ve been curious about the process of making this website, <span>contact me!</span>
+                            about my projects or if you are curious about the process of making this website, <span>contact me!</span>
                         </p>
 
                         <div className="imgContainer">
