@@ -1,5 +1,6 @@
 import scoutSkills from "/img/scoutsSkills.png";
 import selfPresentation from "/img/Self-presentation.png";
+import monkeyTest from "/img/Monkey Test.png";
 
 export const projectData = [
     {
@@ -20,5 +21,14 @@ export const projectData = [
         img: selfPresentation,
         buttonText: "Back to homepage",
         link: "/",
+    },
+    {
+        title: "Monkey Test",
+        desc: [
+            "I created this app because of my curious about how monkeys in NASA are so good in this game. To try it myself I thought I would do something similar. The app depends on memorizing a sequence of numbers (from 1 to nine). After they hide, you have to clicks blocks in the right order",
+        ],
+        img: monkeyTest,
+        buttonText: "See on github",
+        link: "https://github.com/Pawel-Serkowski/MokeyTest",
     },
 ];
