@@ -1,7 +1,7 @@
 ## Table of contents
-*[About me and this project](#about_me_and_this_project)
-*[Technologies](#technologies)
-*[Setup](#setup)
+* [About me and this project](#about_me_and_this_project)
+* [Technologies](#technologies)
+* [Setup](#setup)
 
 ## About me and this project
 Hi, my name is Paweł and I dream about being a great programmer. I did this portfolio as a part of competition task.
